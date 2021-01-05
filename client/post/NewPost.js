@@ -80,7 +80,7 @@ export default function NewPost (props){
       if (data.error) {
         setValues({...values, error: data.error})
       } else {
-        setValues({...values, text:'', photo: ''})
+        setValues({...values, text:'', photo: ''})  
         props.addUpdate(data)
       }
     })
